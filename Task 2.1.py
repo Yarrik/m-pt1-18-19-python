@@ -15,6 +15,5 @@ elif a < b + c :
     print(b + c - a)
 if b > a > 50 or c > a > 50 :
     print('Вася')
-else :
-    if  a > 5 or b == 7 and c == 7 :
-        print ('Петя')
+elif a > 5 or b == 7 and c == 7 :
+    print ('Петя')
