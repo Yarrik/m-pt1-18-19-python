@@ -13,7 +13,7 @@ if a > b + c :
     print(a-b-c)
 elif a < b + c :
     print(b + c - a)
-if a > 50 and b > a or c > a :
+if a > 50 and b > a and c > a :
     print('Вася')
 else :
     if  a > 5 or b == 7 and c == 7 :
