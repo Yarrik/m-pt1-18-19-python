@@ -1,3 +1,6 @@
+List_1 = ['1.missis Marfa Vasilievna ','age', 120,{'Hobby':['needlepoint','fairy tales','Ivan Vasilievich']}]
+List_2 = ['2. mister Ivan the Terrible ','age', 59, {'Hobby':['oprichniki','son ','Kemska volost']}] 
+List_of_persons = List_1 + List_2
 i ='_'
 j ='-'
 k ='*'
@@ -40,9 +43,7 @@ elif 35 <= x < 50 :
     print('Recomendation : I am sorry , i have no idea , what to do ((( You are extremely obese )))) ' )
     print('graphic BMI')
     print(0,i*18,19,j*5,25,k*4,30,l*4,35,m*int(float(x-35)) + 'x' + m*int(float(45-x)),45)
-List_of_persons = [ 'Марфа Васильевна ','пол','женский','возраст', 120,{'хобби':['макроме','сказки','Иван Васильевич'] },\
-     'Иван Грозный','пол','мужской', 'возраст', 59, {'хобби': ['Опричники','Сын','Кемска волость']}] 
-print('Ok! Now we continues. Do you want to know about other persons? Yes or No?' )
+print('Ok! Now we continues. Do you want to know about other persons? Yes or No?')
 input()
 if 'yes' :
     print(List_of_persons)
@@ -65,5 +66,43 @@ if 'yes' :
     print('-  Body Mass Index =' , round(x1, 4) , 'kg/m2')
 elif 'no' :
     print('Ok. enough')
+Next_person = [{3:c1,'Name': a1},{'Age ':b1,'height ':d1,
+     'weight ': e1,'Body Mass Index ':x1,}]
+print('Do you want to add this person in List_of_persons ? Yes or No?')
+input()
+if 'yes' :
+    List_of_persons.append(Next_person) 
+    print('This is new list ' , List_of_persons)
+elif 'no' :
+    print('Ok. enough')
+print('Do you want to delete any person in List_of_persons ? Yes or No? ')
+input()
+if 'yes' :
+    print('What person do you want to delete? Marfa Vasilievna or Ivan the Terrible or ' , a1 ,'?')
+    z= input()
+    if 'Marfa Vasilievna'==z :
+        del List_of_persons[0:4]
+        print('Ok, look at new list :', List_of_persons)
+    elif 'Ivan the Terrible'== z:
+        del  List_of_persons[4:8]
+        print('Ok, look at new list :', List_of_persons)
+    elif a1 ==z :
+        del  List_of_persons[8:]
+        print('Ok, look at new list :', List_of_persons)
+elif 'no' :
+    print('Ok. enough')
+print('if you want to see information about one of our persons please \
+push 1:Marfa Vasilievna or 2:Ivan the Terrible  or 3:', a1 )
+P = input()
+if P == 1 :
+    print (List_1)
+elif P == 2 :
+    print (List_2)
+elif P == 3 :
+    print (Next_person)
+
+
+
+
     
     
