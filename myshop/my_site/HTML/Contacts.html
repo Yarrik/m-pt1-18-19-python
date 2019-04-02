@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacts</title>
+    <style>
+        p {text-align: center}
+    </style>
+</head>
+<body>
+<table align="center" width="400" border="1">
+    <colgroup>
+        <col width="60%">
+        <col width="40%">
+    </colgroup>
+    <tr><th>Name</th><th>Country</th></tr>
+    {% for key in accounts%}
+        <tr><td>{{key.0}}</td><td>{{key.1}}</td></tr>
+        <br>
+    {% endfor %}
+</table>
+<p>Would you like to see <a href="http://127.0.0.1:8000/" target="_blank">welcome-page?</a></p>
+</body>
+</html>
